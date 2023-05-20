@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/just-for-fun/static/js/main.c0e8e091.js",
+    "static/media/bbb.jpg": "/just-for-fun/static/media/bbb.d95cac22006531ae499d.jpg",
+    "static/media/aaa.jpg": "/just-for-fun/static/media/aaa.32d49163fd4933758494.jpg",
+    "index.html": "/just-for-fun/index.html",
+    "main.c0e8e091.js.map": "/just-for-fun/static/js/main.c0e8e091.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c0e8e091.js"
+  ]
+}
