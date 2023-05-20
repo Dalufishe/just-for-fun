@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import { css, injectGlobal } from "@emotion/css";
+import SpringTest from "./SpringTest";
+
+injectGlobal(`
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+`);
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className={css(`
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      `)}
+    >
+      <h1
+        className={css`
+          color: white;
+          position: absolute;
+          top: 20vh;
+          left: 50vw;
+          transform: translate(-50%, 0);
+        `}
+      >
+        Click
+      </h1>
+      <SpringTest />
     </div>
   );
 }
-
-export default App;
